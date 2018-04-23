@@ -4,7 +4,7 @@
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage ""
-    url "https://gitlab.octo.com/skool9/brew/raw/master/skool-0.1.tar.gz"
+    url "https://raw.githubusercontent.com/skool9/homebrew-stuff/master/Formula/skool.rb"
     sha256 "25773276f05203c83eb31144dc8c74ba406c42c27edaab4744b1e1f29bafdda2"
     # depends_on "cmake" => :build
   

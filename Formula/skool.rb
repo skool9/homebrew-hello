@@ -5,7 +5,7 @@ class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage ""
     url "https://github.com/skool9/homebrew-stuff/blob/master/tarballs/skool-0.1.tar.gz?raw=true"
-    sha256 "25773276f05203c83eb31144dc8c74ba406c42c27edaab4744b1e1f29bafdda2"
+    sha256 "efec07edd4fba29aa2af5b35849068ddf61fc2b033ca798b5327460f4a215415"
     # depends_on "cmake" => :build
   
     def install

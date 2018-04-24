@@ -28,12 +28,9 @@ class Skool < Formula
       mkdir "/tmp/skool9-contacts/"
       system "mv ./* /tmp/skool9-contacts/" 
       puts "Bienvenue sur la meilleure SKOOL. \n Cette SKOOL est composée de #{@skoolers.join(', ')}"
-      i = 0
-      while i < 1
-        puts "Qui voulez-vous apprendre à connaitre (trigramme)?"
-        @trigram = gets.chomp 
-        puts "Vous voulez connaitre #{@trigramList[@trigam]}. Son profil va être téléchargé sur votre machine."
-        system "open /tmp/skool9-contacts/contact_#{@trigam}.vcf"
-      end
+      puts "Qui voulez-vous apprendre à connaitre (trigramme)?"
+      @trigram = gets.chomp 
+      puts "Vous voulez connaitre #{@trigramList[@trigam]}. Son profil va être téléchargé sur votre machine."
+      system "open /tmp/skool9-contacts/contact_#{@trigam}.vcf"
     end
   end

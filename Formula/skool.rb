@@ -23,9 +23,8 @@ class Skool < Formula
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
-      puts "What do you want to do ?"
-      stuff = $stdin.gets.chomp
-      puts "You want to do #{stuff}"
+      system "mkdir", "/tmp/skool9-contacts/"
+      system "tar", "-zxvf", "tarballs/skool-0.2.tar.gz", "-C", "/tmp/skool9-contacts"
 
     end
   end

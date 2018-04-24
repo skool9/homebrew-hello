@@ -24,6 +24,6 @@ class Skool < Formula
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
       mkdir "/tmp/skool9-contacts/"
-      puts "${prefix}" 
+      puts "#{prefix}" 
     end
   end

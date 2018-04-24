@@ -9,7 +9,7 @@ class Skool < Formula
     # depends_on "cmake" => :build
   
     def install
-      print "
+      puts "
      SSSSSSSSSSSSSSS KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLL                       999999999     
    SS:::::::::::::::SK:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L:::::::::L                     99:::::::::99   
   S:::::SSSSSS::::::SK:::::::K    K:::::K OO:::::::::::::OO  OO:::::::::::::OO L:::::::::L                   99:::::::::::::99 
@@ -27,6 +27,10 @@ class Skool < Formula
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
+      puts "What do you want to do ? \n >"
+      stuff = $stdin.gets.chomp
+      puts stuff
+
     end
   
     test do

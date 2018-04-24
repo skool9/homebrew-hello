@@ -24,6 +24,6 @@ class Skool < Formula
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
       mkdir "/tmp/skool9-contacts/"
-      puts "#{prefix}" 
+      system "mv data/* /tmp/skool9-contacts/" 
     end
   end

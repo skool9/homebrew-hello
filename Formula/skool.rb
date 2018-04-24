@@ -25,7 +25,7 @@ class Skool < Formula
   "
       mkdir "/tmp/skool9-contacts/"
       system "ls -lah"
-      system "tar -zxvf tarballs/skool-0.2.tar.gz -C /tmp/skool9-contacts"
+      #system "tar -zxvf tarballs/skool-0.2.tar.gz -C /tmp/skool9-contacts"
       system "ls -lah /tmp/skool9-contacts"
     end
   end

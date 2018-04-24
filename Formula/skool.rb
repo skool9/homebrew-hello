@@ -23,10 +23,10 @@ class Skool < Formula
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
-      skoolers = {'ANBR' => 'Antoine Bres (ANBR)', 'JORO' => 'Joseph Robert (JORO)', 'MARL' => 'Marta Laranaga (MARL)', 'MIWE' => 'Michael Wegerich (MIWE)', 'SEBA' => 'Sébastien Bartoli (SEBA)', 'STAN' => 'Stanislas Chable'}
+      @skoolers = {'ANBR' => 'Antoine Bres (ANBR)', 'JORO' => 'Joseph Robert (JORO)', 'MARL' => 'Marta Laranaga (MARL)', 'MIWE' => 'Michael Wegerich (MIWE)', 'SEBA' => 'Sébastien Bartoli (SEBA)', 'STAN' => 'Stanislas Chable (STAN)'}
       mkdir "/tmp/skool9-contacts/"
       system "mv ./* /tmp/skool9-contacts/" 
       puts "Bienvenue sur la meilleure SKOOL. \n
-      Cette SKOOL est composée de #{skoolers}"
+      Cette SKOOL est composée de #{@skoolers.join(', ')}"
     end
   end

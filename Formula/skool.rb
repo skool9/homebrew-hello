@@ -34,5 +34,6 @@ class Skool < Formula
         @trigram = gets.chomp 
         puts "Vous voulez connaitre #{@trigramList[@trigam]}. Son profil va être téléchargé sur votre machine."
         system "open /tmp/skool9-contacts/contact_#{@trigam}.vcf"
+      end
     end
   end

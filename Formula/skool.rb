@@ -1,6 +1,6 @@
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
-    homepage ""
+    homepage "https://askbob.octo.com/teams/SKOOL"
     url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.2.tar.gz?raw=true"
     sha256 "e64824ec472a13fb41cec357e80a541b58b6e168362fcdd809250308d3132343"
   
@@ -23,8 +23,9 @@ class Skool < Formula
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
-      system "mkdir", "/tmp/skool9-contacts/"
-      system "tar", "-zxvf", "tarballs/skool-0.2.tar.gz", "-C", "/tmp/skool9-contacts"
-
+      mkdir "/tmp/skool9-contacts/"
+      system "ls -lah"
+      system "tar -zxvf tarballs/skool-0.2.tar.gz -C /tmp/skool9-contacts"
+      system "ls -lah /tmp/skool9-contacts"
     end
   end

@@ -1,12 +1,8 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage ""
     url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.2.tar.gz?raw=true"
     sha256 "e64824ec472a13fb41cec357e80a541b58b6e168362fcdd809250308d3132343"
-    # depends_on "cmake" => :build
   
     def install
       puts "
@@ -27,22 +23,9 @@ class Skool < Formula
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
-      puts "What do you want to do ? \n >"
+      puts "What do you want to do ?"
       stuff = $stdin.gets.chomp
-      puts stuff
+      puts "You want to do #{stuff}"
 
-    end
-  
-    test do
-      # `test do` will create, run in and delete a temporary directory.
-      #
-      # This test will fail and we won't accept that! For Homebrew/homebrew-core
-      # this will need to be a test that verifies the functionality of the
-      # software. Run the test with `brew test skool`. Options passed
-      # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-      #
-      # The installed folder is not in the path, so use the entire path to any
-      # executables being tested: `system "#{bin}/program", "do", "something"`.
-      system "false"
     end
   end

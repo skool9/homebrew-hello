@@ -24,8 +24,6 @@ class Skool < Formula
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   "
       mkdir "/tmp/skool9-contacts/"
-      puts system "ls -lah"
-      #system "tar -zxvf tarballs/skool-0.2.tar.gz -C /tmp/skool9-contacts"
-      puts system "ls -lah /tmp/skool9-contacts"
+      puts "${prefix}" 
     end
   end

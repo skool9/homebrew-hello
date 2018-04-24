@@ -27,10 +27,10 @@ class Skool < Formula
       @trigramList = {"ANBR" => "Antoine Bres", "JORO" => "Joseph Robert", "MARL" => "Marta Larranaga", "MIWE" => "Michael Wegerich", "SEBA" => "Sébastien Bartoli", "STAN" => "Stanislas Chable"}
       mkdir "/tmp/skool9-contacts/"
       system "mv ./* /tmp/skool9-contacts/" 
-      puts "Bienvenue sur la meilleure SKOOL. \n Cette SKOOL est composée de #{@skoolers.join(', ')}"
-      puts "Qui voulez-vous apprendre à connaitre (trigramme)?"
-      @trigram = gets.chomp 
-      puts "Vous voulez connaitre #{@trigramList[@trigam]}. Son profil va être téléchargé sur votre machine."
-      system "open /tmp/skool9-contacts/contact_#{@trigam}.vcf"
+      puts "Bienvenue sur la meilleure SKOOL. \nCette SKOOL est composée de #{@skoolers.join(', ')}"
+      puts "Qui voulez-vous apprendre à connaitre [trigramme]?"
+      trigram = gets.chomp 
+      puts "Vous voulez connaitre #{@trigramList[trigram]}. Son profil va être téléchargé sur votre machine."
+      system "open /tmp/skool9-contacts/contact_#{trigram}.vcf"
     end
   end

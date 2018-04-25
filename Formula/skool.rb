@@ -9,6 +9,8 @@ class Skool < Formula
       mkdir "/tmp/skool9-contacts/"
       system "mv ./*.vcf /tmp/skool9-contacts/"
       bin.install "skool"
+      bin.install "string_extend.rb"
+      bin.install "text_data.rb"
       puts "Vous avez installé la SKOOL9 avec succès ! Tapez `skool` pour démarrer."
     end
   end

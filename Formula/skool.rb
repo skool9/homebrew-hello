@@ -6,8 +6,8 @@ class Skool < Formula
     depends_on 'imagemagick@6'
   
     def install
-      system "gem install rmagick"
-      system "gem install catpix"
+      system "gem", "install" ,"rmagick"
+      system "gem", "install" ,"rmagick"
       mkdir "/tmp/skool9-contacts/"
       system "mv ./*.vcf /tmp/skool9-contacts/"
       bin.install "skool"

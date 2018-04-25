@@ -1,17 +1,11 @@
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage "https://askbob.octo.com/teams/SKOOL"
-    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.3.tar.gz?raw=true"
-    sha256 "228524d2c34c04bb1ba8c5fbbcbffd487a395b4720346726fc7dcb2c665f4bbf"
+    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.4.tar.gz?raw=true"
+    sha256 "023d199abedeba7d3be1b155d803c4c48b528ed0cb42af8c5165251f08287b37"
     #depends_on 'imagemagick@6'
   
     def install
-      ENV["GEM_HOME"] = libexec
-      system "gem", "install" ,"rmagick"
-      system "gem", "install" ,"catpix"
-      system "gem", "install", "vcardigan"
-      bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
-      
       mkdir "/tmp/skool9-contacts/"
       system "mv ./*.vcf /tmp/skool9-contacts/"
       bin.install "skool"

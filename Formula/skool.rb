@@ -1,8 +1,8 @@
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage "https://askbob.octo.com/teams/SKOOL"
-    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.4.2.tar.gz?raw=true"
-    sha256 "46ece858992edf1fee1da2a43d8cb588aa381695284bacf50367a5e0d51bf314"
+    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.4.3.tar.gz?raw=true"
+    sha256 "0026ea8e5edc06d7e4690011bbca5359f46818e32ea960fa1731f5bb2a99a459"
     #depends_on 'imagemagick@6'
   
     def install

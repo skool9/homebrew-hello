@@ -264,15 +264,18 @@ Comédien pendant 5 ans, Stanislas croit au travail en équipe, porté sur l’h
 ...*///////((##((*.,,.,,*%#(*,,,*******/*.#&@@@@@@@&&&%%%##"
 }
 
-puts "Bienvenue sur la meilleure SKOOL. \n\nCette SKOOL est composée de #{@skoolers.join(', ')}\n"
+puts "Bienvenue sur la meilleure SKOOL. \n\n"
 
 i = 0
 while i < 1
-    puts "Qui voulez-vous apprendre à connaitre [trigramme]? (ou quittez, tapez 'stop')".brown
+    puts "Cette SKOOL est composée de #{@skoolers.join(', ')}\n"
+    puts "Qui voulez-vous apprendre à connaitre ?  [trigramme][ou quittez, tapez 'stop']".brown
     puts ">".gray
     @trigram = gets.chomp
+    @trigram = @trigram.upcase
 
-    if @trigram == 'stop'
+    if @trigram == 'STOP'
+        puts "Au revoir"
         exit
     end
     if @trigramList.key?(@trigram) == false
@@ -299,13 +302,20 @@ while i < 1
 
     #system "cat", "#{@filepath}"
     puts "\n\n#{@bios[@trigram]}\n\n"
-    puts "Voulez-vous ajouter son profil dans vos contacts ? [Y/n]".brown
+    puts "Voulez-vous ajouter son profil dans vos contacts ? (macos seulement) [Y/n]".brown
     puts ">".gray
     @accept = gets.chomp
-    if @accept === "Y"
+    if @accept.upcase === "Y"
         system "open #{@filepath}"
         puts "#{@trigramList[@trigram]} a été ajouté à vos contacts".green
     end
-    puts "Au revoir"
-    exit
+    puts "Voulez-vous voir le reste de la skool ? [Y/n]".brown
+    puts ">".gray
+    @exit = gets.chomp
+    if @exit.upcase == "Y"
+        next
+    else
+        puts "Au revoir"
+        exit
+    end
 end 

@@ -295,7 +295,7 @@ while i < 1
     
     puts "Son téléphone : #{tel}".cyan
     puts "Son email : #{email}".cyan
-    puts "@asciiPhotos[@trigram]".gray
+    puts "#{@asciiPhotos[@trigram]}".gray
 
     #system "cat", "#{@filepath}"
     puts "\n\n#{@bios[@trigram]}\n\n"

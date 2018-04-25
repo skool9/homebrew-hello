@@ -1,12 +1,13 @@
 class Skool < Formula
     desc "Pour installer la meilleure SKOOL"
     homepage "https://askbob.octo.com/teams/SKOOL"
-    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.2.tar.gz?raw=true"
-    sha256 "e64824ec472a13fb41cec357e80a541b58b6e168362fcdd809250308d3132343"
+    url "https://github.com/skool9/homebrew-hello/blob/master/tarballs/skool-0.3.tar.gz?raw=true"
+    sha256 "8b90bf76deba0b67409201cb6d15cf555b1625fc40cf33599138cd681bdf8909"
   
     def install
       mkdir "/tmp/skool9-contacts/"
-      system "mv ./* /tmp/skool9-contacts/" 
-      system "ruby /tmp/skool9-contacts/skool-app.rb"
+      system "mv ./*.vcf /tmp/skool9-contacts/"
+      bin.install "skool.rb"
+      puts "Vous avez installé la SKOOL9 avec succès ! Tapez `skool` pour démarrer."
     end
   end

@@ -29,8 +29,13 @@ class Skool < Formula
       system "mv ./* /tmp/skool9-contacts/" 
       puts "Bienvenue sur la meilleure SKOOL. \nCette SKOOL est composée de #{@skoolers.join(', ')}"
       puts "Qui voulez-vous apprendre à connaitre [trigramme]?"
-      trigram = gets.chomp 
-      puts "Vous voulez connaitre #{@trigramList[trigram]}. Son profil va être téléchargé sur votre machine."
-      system "open /tmp/skool9-contacts/contact_#{trigram}.vcf"
+      @trigram = stdout.gets.chomp 
+      puts "Vous voulez connaitre #{@trigramList[@trigram]}. Voulez-vous ajouter son profil dans vos contacts ? [Y/n]"
+      @accept = stdout.gets.chomp
+      if @accept === "Y"
+        system "open /tmp/skool9-contacts/contact_#{@trigram}.vcf"
+      else
+        puts "Au revoir"
+      end
     end
   end

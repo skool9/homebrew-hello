@@ -1,22 +1,55 @@
-# SKOOL9
-## brew install skool
+# brew install skool
 
-### What is it ?
+[![](https://i.imgur.com/hXBEYAd.png)](https://github.com/skool9/homebrew-hello/)
 
-La meilleure SKOOL, que tu peux installer depuis n'importe où. La brew install skool est une édition spéciale de la skool qui réuni la crème de début 2018.
-Avec ce super mini-programme tu va pouvoir découvrir les membres de la SKOOL9 et avoir leur 06. (On sait que vous en avez tous rêvé).
+La SKOOL qui manquait à OCTO, que tu peux installer depuis n’importe où : la SKOOL9.
 
-### Comment qu'on l'installe ?
+La brew install skool est une édition spéciale de la SKOOL qui réunit la crème de la crème. Avec ce super mini-programme tu vas pouvoir découvrir les membres de la SKOOL9 et avoir leur 06. (On sait que vous en avez tous rêvé).
 
-Sur macos (oui seulement, désolé aux linuxiens et autres PCistes) :
+![](https://i.imgur.com/5CGOz4A.gif)
+
+## Installation
+
+### macOS
 
 ```bash
 brew tap skool9/hello
 brew install skool
 ```
 
-Après ces deux petites étapes, il vous suffira simplement de taper `skool` dans votre terminal préferé pour en apprendre plus.
+### Linux
 
-### Pourquoi `brew install skool` ?
+Installe le package [linuxbrew]() puis suis les étapes macOS.
 
-Parce que c'est le running gag.
+### Windows
+
+Rien de plus simple, télécharge [l'exécutable ici.]()
+
+## Utilisation
+
+Dans ton terminal préféré :
+
+```bash
+skool
+```
+
+## Pourquoi ce nom ?
+
+Tout a commencé avec un des skoolers qui installe tous ses programmes avec brew. C’est rapidement devenu la solution ultime à tous les problèmes, et le running gag de la promo :
+
+- Pas de sécurité sur ton application ? `brew install sécurité`
+- Pas de tests ? `brew install tests`
+- Pas de CI ? `brew install CI`
+- Pas d’autres idées ? `brew install idées`
+
+![](https://i.imgur.com/fYpjVNt.jpg)
+
+## Donations 🍺
+
+Une quête tous les jeudis soirs au Dock, nous acceptons toutes formes de dons en liquide. 🍷🍾🍸🍹🥃🍺
+
+## Contribuer
+
+Staffe nous sur tes missions & donne nous du TACE. 😘 On a un saltimbanque, un débauché d’Engie, un bras cassé, un écolier, un fonctionnaire à la retraite et une Erasmus. Tu peux donc nous faire confiance pour faire de la qualité.
+
+![](https://i.imgur.com/n5X00k7.gif)

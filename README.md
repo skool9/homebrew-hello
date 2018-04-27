@@ -12,6 +12,8 @@ La brew install skool est une édition spéciale de la SKOOL qui réunit la crè
 
 ### macOS
 
+Installe [Homebrew](https://brew.sh) si ce n'est pas déjà fait puis :
+
 ```bash
 brew tap skool9/hello
 brew install skool
@@ -46,10 +48,10 @@ Tout a commencé avec un des skoolers qui installe tous ses programmes avec brew
 
 ## Donations 🍺
 
-Une quête tous les jeudis soirs au Dock, nous acceptons toutes formes de dons en liquide. 🍷🍾🍸🍹🥃🍺
+Une quête est organisée tous les jeudis soirs au Dock, nous acceptons toutes formes de dons en liquide. 🍷🍾🍸🍹🥃🍺
 
 ## Contribuer
 
-Staffe nous sur tes missions & donne nous du TACE. 😘 On a un saltimbanque, un débauché d’Engie, un bras cassé, un écolier, un fonctionnaire à la retraite et une Erasmus. Tu peux donc nous faire confiance pour faire de la qualité.
+Staffe nous sur tes missions & donne nous du TACE. 😘 On a un saltimbanque, un débauché d’Engie, un bras cassé, un écolier, un fonctionnaire à la retraite et une Erasmus. Tu peux donc nous faire confiance pour faire de la **qualité**.
 
 ![](https://i.imgur.com/n5X00k7.gif)

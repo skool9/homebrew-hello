@@ -24,7 +24,7 @@ puts "Bienvenue sur la meilleure SKOOL. \n\n"
 
 i = 0
 while i < 1
-    puts "Cette SKOOL est composée de #{@skoolers.join(', ')}\n"
+    puts "Cette SKOOL est composée de #{@skoolers.join(', ')}. Et évidemment de leur mentor Florent (FJA)\n"
     puts "Qui voulez-vous apprendre à connaitre ?  [trigramme][ou quittez, tapez 'stop']".brown
     puts ">".gray
     @trigram = gets.chomp
@@ -34,36 +34,46 @@ while i < 1
         puts "Au revoir"
         exit
     end
-    if @trigramList.key?(@trigram) == false
+    if @trigram == "FJA"
+        puts "Le meilleur mentor sans qui rien n'aurai pu arriver ! Florent Jaby, qu'on ne présente plus. <3 & Datalove".bg_magenta.black
+        puts "#{@asciiPhotos[@trigram]} \n\n".bg_magenta.black 
+    elsif @trigramList.key?(@trigram) == false
         puts "Cette personne n'est pas dans la meilleure skool (la SKOOL9), ou vous n'avez pas tapé un trigramme\n".red
         next
     end
-
-    @nameString = "#{@trigramList[@trigram]}".cyan
-    puts "Vous voulez connaitre #{@nameString}.\n\n" 
-
-    # VCARD Interesting lines
-    # 4 : Fullname
-    # 6 : Telephone
-    # 7 : Email
-    @filepath = "/tmp/skool9-contacts/contact_#{@trigram}.vcf"
-    file = File.open(@filepath, "r")
-    @vcfData = file.read.split("\n")
-    tel = @vcfData[6].split(":")[1]
-    email = @vcfData[7].split(":")[1]
     
-    puts "Son téléphone : #{tel}".cyan
-    puts "Son email : #{email}".cyan
-    puts "#{@asciiPhotos[@trigram]}".gray
+    @filepath = "/tmp/skool9-contacts/contact_#{@trigram}.vcf"
+    if @trigram != "FJA"
+        @nameString = "#{@trigramList[@trigram]}".cyan
+        puts "Vous voulez connaitre #{@nameString}.\n\n" 
 
-    #system "cat", "#{@filepath}"
-    puts "\n\n#{@bios[@trigram]}\n\n"
+        # VCARD Interesting lines
+        # 4 : Fullname
+        # 6 : Telephone
+        # 7 : Email
+        file = File.open(@filepath, "r")
+        @vcfData = file.read.split("\n")
+        tel = @vcfData[6].split(":")[1]
+        email = @vcfData[7].split(":")[1]
+        
+        puts "Son téléphone : #{tel}".cyan
+        puts "Son email : #{email}".cyan
+        puts "#{@asciiPhotos[@trigram]}".gray
+
+        #system "cat", "#{@filepath}"
+        puts "\n\n#{@bios[@trigram]}\n\n"
+    end
+    
     puts "Voulez-vous ajouter son profil dans vos contacts ? (macos seulement) [Y/n]".brown
     puts ">".gray
     @accept = gets.chomp
     if @accept.upcase === "Y"
         system "open #{@filepath}"
-        puts "#{@trigramList[@trigram]} a été ajouté à vos contacts".green
+        if @trigram == "FJA"
+            puts "Florent Jaby a été ajouté à vos contacts".green
+        else 
+            puts "#{@trigramList[@trigram]} a été ajouté à vos contacts".green
+        end
     end
     puts "Voulez-vous voir le reste de la skool ? [Y/n]".brown
     puts ">".gray

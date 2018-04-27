@@ -19,11 +19,11 @@ brew install skool
 
 ### Linux
 
-Installe le package [linuxbrew]() puis suis les étapes macOS.
+Installe le package [linuxbrew](http://linuxbrew.sh/) puis suis les étapes macOS.
 
 ### Windows
 
-Rien de plus simple, télécharge [l'exécutable ici.]()
+Rien de plus simple, télécharge [l'exécutable ici.](http://bitly.com/98K8eH)
 
 ## Utilisation
 

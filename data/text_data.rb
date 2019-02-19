@@ -1,10 +1,10 @@
-@skoolers = ['Antoine (ANBR)', 'Joseph (JORO)', 'Marta (MARL)', 'Michael (MIWE)', 'Sébastien (SEBA)', 'Stanislas (STAN)']
+@skoolers = ['Antoine (ANBR)', 'Joseph (JORO)', 'Marta (MARL)', 'Mickael (MIWE)', 'Sébastien (SEBA)', 'Stanislas (STAN)']
 @updates = {
-  "ANBR" => "A rejoint l'équipe Produits d'OCTO essayer d'expliquer aux moldus ce qu'est DataDriver.",
-  "JORO" => "A rejoint ARCHI, comblant ainsi sa passion pour les schémas de donnés et le powerpoint",
+  "ANBR" => "A rejoint l'équipe Produits d'OCTO pour essayer d'expliquer aux moldus ce qu'est DataDriver.",
+  "JORO" => "A rejoint ARCHI, comblant ainsi sa passion pour les schémas de base de données et Powerpoint.",
   "MARL" => "A rejoint WOAPI, parce qu'elle adore le front.",
-  "MIWE" => "A rejoint CRAFT, pour renforcer sa spécalisation en renommage de variables.",
-  "SEBA" => "A rejoint la DSI, dans l'équipe Produits pour passer son permis sur Mario Kart, à défaut de l'avoir en vrai",
+  "MIWE" => "A rejoint CRAFT, pour renforcer sa spécialisation en renommage de variables.",
+  "SEBA" => "A rejoint la DSI, dans l'équipe Produits pour passer son permis sur Mario Kart, à défaut de l'avoir en vrai.",
   "STAN" => "A rejoint WEBF, car il est passionné par le back-end."
 }
 @bios = {
@@ -49,7 +49,7 @@ Stanislas rejoint ensuite l’équipe de Begood, dispositif digital pour amélio
 Cette expérience lui permet d’apporter son expertise en JavaScript mais également, en travaillant aux côtés de développeurs seniors, de se former à AngularJS et TypeScript.
     
 Comédien pendant 5 ans, Stanislas croit au travail en équipe, porté sur l’humain, et au partage des connaissances. À l’écoute, passionné et pédagogue, il souhaite poursuivre le développement d’applications web, sur des technologies front-end et back-end."}
-@trigramList = {"ANBR" => "Antoine Bres", "JORO" => "Joseph Robert", "MARL" => "Marta Larranaga", "MIWE" => "Michael Wegerich", "SEBA" => "Sébastien Bartoli", "STAN" => "Stanislas Chable"}
+@trigramList = {"ANBR" => "Antoine Bres", "JORO" => "Joseph Robert", "MARL" => "Marta Larranaga", "MIWE" => "Mickael Wegerich", "SEBA" => "Sébastien Bartoli", "STAN" => "Stanislas Chable"}
 @asciiPhotos = {
     "ANBR" => "               *&&@@&&@@@&&@@@@@@&@@@@@@@@@@@&.            
               /&%&&&&@@@@@@@@@@@@@@@@@@@@@@@&@&            

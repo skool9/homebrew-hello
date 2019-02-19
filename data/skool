@@ -42,7 +42,7 @@ while i < 1
         next
     end
     
-    @filepath = "/usr/local/Cellar/skool/1.0.3d.tar/bin/contact_#{@trigram}.vcf"
+    @filepath = "/usr/local/Cellar/skool/1.0.3e.tar/bin/contact_#{@trigram}.vcf"
     if @trigram != "FJA"
         @nameString = "#{@trigramList[@trigram]}".cyan
         puts "Vous voulez connaitre #{@nameString}.\n\n" 

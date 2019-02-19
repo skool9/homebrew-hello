@@ -6,7 +6,7 @@ class Skool < Formula
     #depends_on 'imagemagick@6'
   
     def install
-      bin.install Dir["data/*.vcf"]
+      bin.install Dir["*.vcf"]
       bin.install "skool"
       bin.install "string_extend.rb"
       bin.install "text_data.rb"

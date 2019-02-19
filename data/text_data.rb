@@ -1,4 +1,12 @@
 @skoolers = ['Antoine (ANBR)', 'Joseph (JORO)', 'Marta (MARL)', 'Michael (MIWE)', 'Sébastien (SEBA)', 'Stanislas (STAN)']
+@updates = {
+  "ANBR" => "A rejoint l'équipe Produits d'OCTO essayer d'expliquer aux moldus ce qu'est DataDriver.",
+  "JORO" => "A rejoint ARCHI, comblant ainsi sa passion pour les schémas de donnés et le powerpoint",
+  "MARL" => "A rejoint WOAPI, parce qu'elle adore le front.",
+  "MIWE" => "A rejoint CRAFT, pour renforcer sa spécalisation en renommage de variables.",
+  "SEBA" => "A rejoint la DSI, dans l'équipe Produits pour passer son permis sur Mario Kart, à défaut de l'avoir en vrai",
+  "STAN" => "A rejoint WEBF, car il est passionné par le back-end."
+}
 @bios = {
 "ANBR" => "Antoine est titulaire d’un diplôme d’ingénieur généraliste en informatique (spécialité Business Intelligence et Data Science), obtenu en 2017 à l’Isep.
 

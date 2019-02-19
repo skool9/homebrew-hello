@@ -20,12 +20,12 @@ puts "
   S:::::::::::::::SS K:::::::K    K:::::K   OO:::::::::OO      OO:::::::::OO   L::::::::::::::::::::::L         9::::::9       
    SSSSSSSSSSSSSSS   KKKKKKKKK    KKKKKKK     OOOOOOOOO          OOOOOOOOO     LLLLLLLLLLLLLLLLLLLLLLLL        99999999        
   ".gray
-puts "Bienvenue sur la meilleure SKOOL. \n\n"
+puts "Bienvenue sur la meilleure SKOOL. (forever number one) \n\n"
 
 i = 0
 while i < 1
-    puts "Cette SKOOL est composée de #{@skoolers.join(', ')}. Et évidemment de leur mentor Florent (FJA)\n"
-    puts "Qui voulez-vous apprendre à connaitre ?  [trigramme][ou quittez, tapez 'stop']".brown
+    puts "Cette SKOOL était composée de #{@skoolers.join(', ')}, et évidemment  leur mentor Florent (FJA). Ils sont désormais partis dans les plus belles des tribus à travers OCTO, découvrez leurs histoires ici. \n"
+    puts "Qui voulez-vous apprendre à connaitre ? [trigramme][ou quittez, tapez 'stop']".brown
     puts ">".gray
     @trigram = gets.chomp
     @trigram = @trigram.upcase
@@ -59,8 +59,9 @@ while i < 1
         puts "Son téléphone : #{tel}".cyan
         puts "Son email : #{email}".cyan
         puts "#{@asciiPhotos[@trigram]}".gray
-
-        puts "\n\n#{@bios[@trigram]}\n\n"
+        
+        puts "\n\n#{@updates[@trigram]}".brown
+        puts "\n#{@bios[@trigram]}\n\n"
     end
     
     puts "Voulez-vous ajouter son profil dans vos contacts ? (macos seulement) [Y/n]".brown
